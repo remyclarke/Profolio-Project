@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéExplorer</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">PokéExplorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#search">Search</a>
+                </li>
+               
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center welcome-message">
+            <h1>Welcome to the Pokémon World</h1>
+            <p>Discover your favorite Pokémon, explore locations, and test your knowledge!</p>
+        </div>
+    </section>
+
+    <!-- Pokémon Search Section -->
+    <section id="search" class="py-4">
+        <div class="container">
+            <h2>Search for Pokémon</h2>
+            <form id="pokemonSearchForm" class="form-inline justify-content-center">
+                <input type="text" id="pokemonInput" placeholder="Enter Pokémon Name or ID" class="form-control mb-2 mr-sm-2">
+                <button type="submit" class="btn btn-primary mb-2">Search</button>
+                <button id="randomBtn" class="btn btn-warning mb-2 ml-2">Generate Random Pokémon</button>
+                <button id="clearBtn" class="btn btn-danger mb-2 ml-2">Clear All</button>
+            </form>
+            <div class="container-fluid">
+                <div id="searchResults" class="mt-4">
+                    <!-- Results will be displayed here -->
+                </div>
+           </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer bg-light py-3">
+        <div class="container text-center">
+            <p></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
